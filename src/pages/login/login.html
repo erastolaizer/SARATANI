@@ -1,0 +1,32 @@
+<!--
+  Generated template for the loginassPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+  <ion-content padding class="log">
+        <img src="assets/image/login.png" height=40% alt="Paris"align="middle">
+    <ion-label color="primary" text-center><h4>Ingia kupata maelekezo</h4></ion-label>
+      <form [formGroup]="login" (ngSubmit)="logForm()">
+        <ion-list>
+            <ion-item>
+              <ion-label stacked><h2>Namba ya simu</h2> </ion-label>
+              <ion-input type="text" formControlName="phone_number" ></ion-input>
+            </ion-item>  
+        </ion-list>
+
+            <ion-grid>
+              <ion-row>
+                <ion-col col-4> <button ion-button color="secondary" full round type="submit" [disabled]="!login.valid"><ion-icon name=""></ion-icon>ingia</button></ion-col>
+              </ion-row>
+            </ion-grid>
+
+          </form><br>
+
+          <ion-row>
+              <ion-col><button ion-button clear full (click)="details()">Jinsi ya kuingia</button></ion-col>
+              <ion-col><button ion-button round small color="secondary"  (click)="ChooseProvider()">changia</button></ion-col>
+          </ion-row>
+  </ion-content>
+  

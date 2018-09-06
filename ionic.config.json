@@ -1,0 +1,7 @@
+{
+  "name": "Saratani",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
